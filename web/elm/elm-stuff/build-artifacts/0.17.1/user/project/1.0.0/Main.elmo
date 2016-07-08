@@ -1,3 +1,3 @@
 var _user$project$Main$main = {
-	main: _elm_lang$html$Html$text('Hello Foo')
+	main: _elm_lang$html$Html$text('This is where Elm starts...')
 };

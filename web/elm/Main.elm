@@ -5,4 +5,4 @@ import Html exposing (text, Html)
 
 main : Html a
 main =
-    text "Hello Foo"
+    text "This is where Elm starts..."
