@@ -4,6 +4,7 @@ defmodule Flog.Post do
   schema "posts" do
     field :title, :string
     belongs_to :user, Flog.User
+    has_many :paragraphs, Flog.Paragraph
 
     timestamps
   end
