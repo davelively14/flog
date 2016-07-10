@@ -7,6 +7,7 @@ defmodule Flog.User do
     field :password, :string, virtual: true
     field :password_hash, :string
     field :email, :string
+    has_many :posts, Flog.Post
 
     timestamps
   end
@@ -25,7 +26,11 @@ defmodule Flog.User do
 
   @doc """
   This function calls the standard changeset, but will also convert the
-  password to an encrypted hash.
+  password to an encrypted hash. The private function put_pass_hash is called,
+  which checks to ensure changeset is both valid and the password is being
+  changed. If the password is included, it will use that virtual field to
+  create the stored password_hash field using Bcrypt via the Comeonin function
+  hashpwsalt.
   """
   def registration_changeset(model, params) do
     model
@@ -35,11 +40,6 @@ defmodule Flog.User do
     |> put_pass_hash
   end
 
-  @doc """
-  Checks to ensure changeset is both valid and the password is being changed.
-  If the password is included, this will use that virtual field to create the
-  stored password_hash field using Bcrypt via the Comeonin function "hashpwsalt"
-  """
   defp put_pass_hash(changeset) do
     case changeset do
       %Ecto.Changeset{valid?: true, changes: %{password: pass}} ->
