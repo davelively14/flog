@@ -8,6 +8,7 @@ defmodule Flog.User do
     field :password_hash, :string
     field :email, :string
     has_many :posts, Flog.Post
+    has_many :comments, Flog.Comment
 
     timestamps
   end

@@ -5,6 +5,7 @@ defmodule Flog.Paragraph do
     field :body, :text
     belongs_to :post, Flog.Post
     has_many :comments, Flog.Comment
+    has_many :paragraph_ratings, Flog.ParagraphRating
 
     timestamps
   end
