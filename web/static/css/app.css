@@ -1,1 +1,19 @@
 /* This file is for your main application css. */
+.template-wide {
+  padding: 20px;
+}
+
+.bg-header {
+  background-color: #ACC8D6;
+}
+.bg-sep {
+  background-color: #57778E;
+  height: 5px;
+}
+/* Background pattern from subtlepatterns.com */
+.bg-repeatable {
+  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/congruent_pentagon.png");
+  background-repeat: repeat;
+}
+
+<body class="home blog" style="background: url(&quot;http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/sayagata-400px.png&quot;);"><div id="adpack">

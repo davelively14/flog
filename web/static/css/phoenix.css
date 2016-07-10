@@ -10,7 +10,7 @@
 
 /* Space out content a bit */
 body, form, ul, table {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -30,8 +30,9 @@ form.link, form.button {
   width: 519px;
   height: 71px;
   display: inline-block;
+  margin-top: 20px;
   margin-bottom: 1em;
-  background-image: url("/images/phoenix.png");
+  background-image: url("/images/resurgens.png");
   background-size: 519px 71px;
 }
 
