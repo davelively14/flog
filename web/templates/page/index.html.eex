@@ -1,6 +1,6 @@
 <div class="container">
   <div class="jumbotron">
-    <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-    <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+    <h2>Dave Lively's Flog</h2>
+    <p class="lead">My personal website, with portfolio and my take on a blog</p>
   </div>
 </div>

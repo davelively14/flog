@@ -9,13 +9,14 @@
 
     <title>Hello Flog!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
 
-  <body class="bg-repeatable">
+  <body class="bg-main">
     <header class="header bg-header">
       <nav role="navigation">
         <ul class="nav nav-pills pull-right">
-          <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+          <li><button href="#" class="btn-lg"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li>
         </ul>
       </nav>
       <span class="logo"></span>
