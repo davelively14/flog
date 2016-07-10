@@ -1,15 +1,15 @@
-defmodule Flog.Paragraph do
+defmodule Flog.Comment do
   use Flog.Web, :model
 
-  schema "paragraphs" do
+  schema "comments" do
     field :body, :text
-    belongs_to :post, Flog.Post
-    has_many :comments, Flog.Comment
+    belongs_to :user, Flog.User
+    belongs_to :paragraph, Flog.Paragraph
 
     timestamps
   end
 
-  @required_fields ~w(field post_id)
+  @required_fields ~w(body user_id paragraph_id)
   @optional_fields ~w()
 
   def changeset(model, params \\ :empty) do
