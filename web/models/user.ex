@@ -9,6 +9,7 @@ defmodule Flog.User do
     field :email, :string
     has_many :posts, Flog.Post
     has_many :comments, Flog.Comment
+    has_many :paragraph_ratings, Flog.ParagraphRatings
     has_many :comment_ratings, Flog.CommentRatings
 
     timestamps
