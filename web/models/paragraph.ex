@@ -10,7 +10,7 @@ defmodule Flog.Paragraph do
     timestamps
   end
 
-  @required_fields ~w(field post_id)
+  @required_fields ~w(body post_id)
   @optional_fields ~w()
 
   def changeset(model, params \\ :empty) do

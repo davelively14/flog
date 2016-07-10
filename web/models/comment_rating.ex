@@ -1,15 +1,15 @@
-defmodule Flog.ParagraphRating do
+defmodule Flog.CommentRating do
   use Flog.Web, :model
 
-  schema "paragraph_ratings" do
+  schema "comment_ratings" do
     field :positive, :boolean, default: true
     belongs_to :user, Flog.User
-    belongs_to :paragraph, Flog.Paragraph
+    belongs_to :comment, Flog.Comment
 
     timestamps
   end
 
-  @required_fields ~w(user_id paragraph_id)
+  @required_fields ~w(user_id comment_d)
   @optional_fields ~w()
 
   def changeset(model, params \\ :empty) do
