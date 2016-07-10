@@ -10,16 +10,19 @@
     <title>Hello Flog!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Special+Elite" rel="stylesheet">
   </head>
 
   <body class="bg-main">
     <header class="header bg-header">
       <nav role="navigation">
-        <ul class="nav nav-pills pull-right">
-          <li><button href="#" class="btn-lg"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li>
-        </ul>
+        <ol class="breadcrumb pull-right typewriter">
+          <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
+          <li>Admin</li>
+          <li>Flog</li>
+        </ol>
       </nav>
-      <span class="logo"></span>
+      <span class="logo"><span class="typewriter text-center"><h1>resurgens.io</h1></span></span>
       <div class="bg-sep">
 
       </div>

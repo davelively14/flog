@@ -2,7 +2,7 @@ defmodule Flog.Paragraph do
   use Flog.Web, :model
 
   schema "paragraphs" do
-    field :body, :text
+    field :body, :string
     belongs_to :post, Flog.Post
     has_many :comments, Flog.Comment
     has_many :paragraph_ratings, Flog.ParagraphRating

@@ -2,7 +2,7 @@ defmodule Flog.Comment do
   use Flog.Web, :model
 
   schema "comments" do
-    field :body, :text
+    field :body, :string
     belongs_to :user, Flog.User
     belongs_to :paragraph, Flog.Paragraph
     has_many :comment_ratings, Flog.Comment

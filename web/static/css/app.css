@@ -8,14 +8,16 @@ Color theme:
   - Pewter: #838383
   - Dark brown: #545448
 */
-.btn-lg {
+.menu-drop {
   background-color: transparent;
   border: none;
   position: relative;
   margin-top: 2em;
   margin-right: 1em;
 }
-
+.breadcrumb {
+  font-size: 120%;
+}
 .template-wide {
   padding: 20px;
 }
@@ -34,5 +36,9 @@ Color theme:
   background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/congruent_pentagon.png");
   background-repeat: repeat;
 }
-
-<body class="home blog" style="background: url(&quot;http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/sayagata-400px.png&quot;);"><div id="adpack">
+.chalk {
+  font-family: 'Fredericka the Great', cursive;
+}
+.typewriter {
+  font-family: 'Special Elite', cursive;
+}
