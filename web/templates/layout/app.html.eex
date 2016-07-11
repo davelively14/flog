@@ -18,16 +18,27 @@
       <nav role="navigation">
         <ol class="breadcrumb pull-right typewriter">
           <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
+          <li>Flog</li>
+          <li>Bio</li>
+          <li>Portfolio</li>
           <%= if @current_user do %>
             <li><%= link "All Users", to: user_path(@conn, :index) %></li>
             <li><%= link "Logout", to: session_path(@conn, :delete, @current_user), method: :delete %></li>
+            <li class="dropdown">
+              <button type="button" id="user-dd" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="border: 0; background: transparent;">
+                <span class="glyphicon glyphicon-user"></span> <%= @current_user.username %> <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="user-dd">
+                <li role="separator" class="divider"></li>
+                <li><%= link "All Users", to: user_path(@conn, :index) %></li>
+              </ul>
+            </li>
           <%= else %>
             <li><%= link "Login", to: session_path(@conn, :new) %></li>
           <% end %>
-          <li><%= link "Home", to: page_path(@conn, :index) %></li>
         </ol>
       </nav>
-      <span class="logo"><span class="typewriter text-center"><h1>resurgens.io</h1></span></span>
+      <span class="logo"><span class="typewriter text-center"><h1><a href="/" style="color: black;">resurgens.io</a></h1></span></span>
       <div class="bg-sep">
 
       </div>
@@ -41,5 +52,7 @@
       <%= render @view_module, @view_template, assigns %>
     </main>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
 </html>
