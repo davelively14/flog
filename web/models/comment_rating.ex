@@ -12,7 +12,7 @@ defmodule Flog.CommentRating do
   @required_fields ~w(user_id comment_d)
   @optional_fields ~w()
 
-  def changeset(model, params \\ :empty) do
+  def changeset(model, params \\ %{}) do
     model
     |> cast(params, @required_fields, @optional_fields)
   end

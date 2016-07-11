@@ -18,8 +18,8 @@
       <nav role="navigation">
         <ol class="breadcrumb pull-right typewriter">
           <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
-          <li>Admin</li>
-          <li>Flog</li>
+          <li><%= link "All Users", to: user_path(@conn, :index) %></li>
+          <li><%= link "Home", to: page_path(@conn, :index) %></li>
         </ol>
       </nav>
       <span class="logo"><span class="typewriter text-center"><h1>resurgens.io</h1></span></span>
@@ -27,9 +27,10 @@
 
       </div>
     </header>
-
-    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <div class="container">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    </div>
 
     <main role="main">
       <%= render @view_module, @view_template, assigns %>

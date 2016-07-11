@@ -12,7 +12,7 @@ defmodule Flog.Post do
   @required_fields ~w(title user_id)
   @optional_fields ~w()
 
-  def changeset(model, params \\ :empty) do
+  def changeset(model, params \\ %{}) do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> validate_length(:title, min: 1, max: 100)

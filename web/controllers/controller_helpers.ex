@@ -1,4 +1,6 @@
 defmodule Flog.ControllerHelpers do
+  # use Flog.Web, :controller
+  import Flog.Router.Helpers
   @doc """
   Given a patterned string, this will return the map.
 
@@ -14,5 +16,15 @@ defmodule Flog.ControllerHelpers do
     |> String.split(", ")
     |> Enum.map(&(String.split(&1, ": ")))
     |> Map.new(fn [x, y] -> {String.to_atom(x), String.to_atom(y)} end)
+  end
+
+  def get_referer(conn) do
+    referer =
+      case List.keyfind(conn.req_headers, "referer", 0) do
+        {_, referer} ->
+          referer
+        nil ->
+          page_path(conn, :index)
+      end
   end
 end

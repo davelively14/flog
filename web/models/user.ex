@@ -9,8 +9,8 @@ defmodule Flog.User do
     field :email, :string
     has_many :posts, Flog.Post
     has_many :comments, Flog.Comment
-    has_many :paragraph_ratings, Flog.ParagraphRatings
-    has_many :comment_ratings, Flog.CommentRatings
+    has_many :paragraph_ratings, Flog.ParagraphRating
+    has_many :comment_ratings, Flog.CommentRating
 
     timestamps
   end
@@ -18,7 +18,7 @@ defmodule Flog.User do
   @required_fields ~w(username display_name)
   @optional_fields ~w(email)
 
-  def changeset(model, params \\ :empty) do
+  def changeset(model, params \\ %{}) do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> validate_length(:username, min: 1, max: 20)

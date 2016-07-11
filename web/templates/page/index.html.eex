@@ -1,6 +1,16 @@
 <div class="container">
   <div class="jumbotron">
-    <h2>Dave Lively's Flog</h2>
-    <p class="lead">My personal website, with portfolio and my take on a blog</p>
+    <h1 class="chalk">Dave Lively's Flog</h1>
+    <p class="lead">My personal website, with portfolio and my take on a blog</p><br>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Are you a member?</p>
+        <%= link "Login", to: "#", class: "btn btn-primary" %>
+      </div>
+      <div class="col-md-6">
+        <p>Are you new here?</p>
+        <%= link "Create User", to: user_path(@conn, :new), class: "btn btn-primary" %>
+      </div>
+    </div>
   </div>
 </div>

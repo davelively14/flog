@@ -1,0 +1,5 @@
+<div class="container">
+  <h1 class="chalk">New User</h1>
+
+  <%= render "form.html", changeset: @changeset, action: user_path(@conn, :create), back: @back %>
+</div>

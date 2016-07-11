@@ -1,0 +1,31 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, "Username", class: "control-label chalk" %>
+    <%= text_input f, :username, placeholder: "Username", class: "form-control", autofocus: true, onfocus: "this.value = this.value;" %>
+    <%= error_tag f, :username %>
+  </div>
+  <div class="form-group">
+    <%= label f, "Display name", class: "control-label chalk" %>
+    <%= text_input f, :display_name, placeholder: "Display name", class: "form-control" %>
+    <%= error_tag f, :display_name %>
+  </div>
+  <div class="form-group">
+    <%= label f, "Email", class: "control-label chalk" %>
+    <%= text_input f, :email, placeholder: "Display name", class: "form-control" %>
+    <%= error_tag f, :email %>
+  </div>
+  <div class="form-group">
+    <%= label f, "Password", class: "control-label chalk" %>
+    <%= password_input f, :password, placeholder: "Password", class: "form-control" %>
+    <%= error_tag f, :password %>
+  </div>
+
+  <%= submit "Save", class: "btn btn-primary" %>
+  <%= link "Back", to: @back, class: "btn btn-danger" %>
+<% end %>

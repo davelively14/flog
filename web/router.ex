@@ -17,6 +17,14 @@ defmodule Flog.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/users/new", UserController, :new
+    post "/users", UserController, :create
+    get "/users", UserController, :index
+    delete "/users/:id", UserController, :delete
+  end
+
+  scope "/flog", Flog do
+    pipe_through [:browser]
   end
 
   # Other scopes may use custom stacks.
