@@ -36,6 +36,7 @@ defmodule Flog.Web do
 
       import Flog.Router.Helpers
       import Flog.Gettext
+      import Flog.Auth, only: [authenticate_user: 2]
     end
   end
 
@@ -58,6 +59,7 @@ defmodule Flog.Web do
   def router do
     quote do
       use Phoenix.Router
+      import Flog.Auth, only: [authenticate_user: 2]
     end
   end
 

@@ -18,6 +18,9 @@
       <nav role="navigation">
         <ol class="breadcrumb pull-right typewriter">
           <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
+          <%= if @current_user do %>
+            <li><%= link "Logout", to: session_path(@conn, :delete, @current_user), method: :delete %></li>
+          <% end %>
           <li><%= link "All Users", to: user_path(@conn, :index) %></li>
           <li><%= link "Home", to: page_path(@conn, :index) %></li>
         </ol>

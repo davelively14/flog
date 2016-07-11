@@ -19,12 +19,11 @@ defmodule Flog.ControllerHelpers do
   end
 
   def get_referer(conn) do
-    referer =
-      case List.keyfind(conn.req_headers, "referer", 0) do
-        {_, referer} ->
-          referer
-        nil ->
-          page_path(conn, :index)
-      end
+    case List.keyfind(conn.req_headers, "referer", 0) do
+      {_, referer} ->
+        referer
+      nil ->
+        page_path(conn, :index)
+    end
   end
 end
