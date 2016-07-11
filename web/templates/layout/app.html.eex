@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Flog!</title>
+    <title>resurgens.io</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Special+Elite" rel="stylesheet">
@@ -19,9 +19,11 @@
         <ol class="breadcrumb pull-right typewriter">
           <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
           <%= if @current_user do %>
+            <li><%= link "All Users", to: user_path(@conn, :index) %></li>
             <li><%= link "Logout", to: session_path(@conn, :delete, @current_user), method: :delete %></li>
+          <%= else %>
+            <li><%= link "Login", to: session_path(@conn, :new) %></li>
           <% end %>
-          <li><%= link "All Users", to: user_path(@conn, :index) %></li>
           <li><%= link "Home", to: page_path(@conn, :index) %></li>
         </ol>
       </nav>
