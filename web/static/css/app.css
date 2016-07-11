@@ -1,8 +1,8 @@
 /* This file is for your main application css.
 Color theme:
-- Primary color group (blue)
-  - Dark: #57778E
-  - Light:  #ACC8D6
+- Primary color group (green)
+  - Dark: #5CD489
+  - Light:  #E1FDEB
 - Secondary color group
   - Light yellow: #FEFAE1
   - Pewter: #838383
@@ -17,19 +17,26 @@ Color theme:
 }
 .breadcrumb {
   font-size: 120%;
+  background-color: #FFFFFF !important;
+  border-radius: 0em 0em 0em 1em !important;
+}
+.jumbotron {
+  background-color: #FFFFFF !important;
 }
 .template-wide {
   padding: 20px;
 }
 .bg-header {
-  background-color: #ACC8D6;
+  background-color: #B1F6CB;
 }
 .bg-sep {
-  background-color: #57778E;
+  background-color: #5CD489;
   height: 5px;
 }
-.bg-main {
-  background-color: #FEFAE1;
+.bg-white-rad {
+  background-color: #FFFFFF;
+  padding: 0em 2em 2em 2em;
+  border-radius: 2em;
 }
 /* Background pattern from subtlepatterns.com */
 .bg-repeatable {

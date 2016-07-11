@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container bg-white-rad">
   <h1 class="chalk">All Users</h1>
 
   <table class="table">

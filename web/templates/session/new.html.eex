@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container bg-white-rad">
   <h1 class="chalk">Login</h1>
   <%= form_for @conn, session_path(@conn, :create), [as: :session], fn f -> %>
     <div class="form-group">
