@@ -19,7 +19,7 @@
         <ol class="breadcrumb pull-right typewriter">
           <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
           <li>Flog</li>
-          <li>Bio</li>
+          <li><%= link "Bio", to: bio_path(@conn, :index) %></li>
           <li><%= link "Portfolio", to: portfolio_path(@conn, :index) %></li>
           <%= if @current_user do %>
             <li><%= link "All Users", to: user_path(@conn, :index) %></li>

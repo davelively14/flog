@@ -22,6 +22,7 @@ defmodule Flog.Router do
     post "/users", UserController, :create
     resources "/sessions", SessionController, only: [:new, :create, :delete]
     get "/portfolio", PortfolioController, :index
+    get "/bio", BioController, :index
   end
 
   scope "/flog", Flog do
