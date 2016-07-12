@@ -20,7 +20,7 @@
           <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
           <li>Flog</li>
           <li>Bio</li>
-          <li>Portfolio</li>
+          <li><%= link "Portfolio", to: portfolio_path(@conn, :index) %></li>
           <%= if @current_user do %>
             <li><%= link "All Users", to: user_path(@conn, :index) %></li>
             <li><%= link "Logout", to: session_path(@conn, :delete, @current_user), method: :delete %></li>
@@ -51,6 +51,7 @@
     <main role="main">
       <%= render @view_module, @view_template, assigns %>
     </main>
+    <br><br>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

@@ -53,3 +53,6 @@ Color theme:
 .shadow {
   text-shadow: 1px 1px gray;
 }
+.indent-in {
+  margin-left: 1em;
+}
