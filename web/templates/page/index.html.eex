@@ -1,18 +1,18 @@
 <div class="container">
   <div class="jumbotron">
-    <h1 class="chalk">Dave Lively's Flog</h1>
-    <p class="lead">My personal website, with portfolio and my take on a blog</p><br>
+    <h1 class="chalk">Dave's Flog</h1><br>
+    <p class="lead typewriter">My personal website, with portfolio, and my take on a newbie programmer's blog.</p><br>
     <%= if !@current_user do %>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Are you a member?</p>
-          <%= link "Login", to: session_path(@conn, :new), class: "btn btn-primary" %>
-        </div>
-        <div class="col-md-6">
-          <p>Are you new here?</p>
-          <%= link "Create User", to: user_path(@conn, :new), class: "btn btn-primary" %>
-        </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Are you a member?</p>
+        <%= link "Login", to: session_path(@conn, :new), class: "btn btn-primary" %>
       </div>
+      <div class="col-md-6">
+        <p>Are you new here?</p>
+        <%= link "Create User", to: user_path(@conn, :new), class: "btn btn-primary" %>
+      </div>
+    </div>
     <%= end %>
   </div>
 </div>

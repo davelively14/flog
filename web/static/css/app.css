@@ -22,6 +22,7 @@ Color theme:
 }
 .jumbotron {
   background-color: #FFFFFF !important;
+
 }
 .template-wide {
   padding: 20px;
@@ -48,4 +49,7 @@ Color theme:
 }
 .typewriter {
   font-family: 'Special Elite', cursive;
+}
+.shadow {
+  text-shadow: 1px 1px gray;
 }
