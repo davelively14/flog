@@ -2,12 +2,26 @@
   <h1 class="chalk">Dave's Bio</h1>
   <br>
   <h4 class="typewriter">Why do we use it?</h4>
-  <p class="indent-in">
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-  </p>
+  <div class="indent-in">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et consequat est. Nam eget tortor a urna consequat iaculis in eu nulla. Morbi commodo ipsum massa, sagittis dignissim augue rhoncus eget. Nunc convallis massa nunc, et pellentesque mauris egestas id. Donec non eros porttitor, congue tortor id, vestibulum lorem. Vivamus ipsum lacus, ultrices id rhoncus vel, dapibus eget orci. Nam et commodo lorem. Quisque ipsum magna, condimentum sed dolor in, hendrerit vehicula velit. Pellentesque iaculis molestie enim, in ultricies sem eleifend a.
+    </p>
+    <p>
+      Sed sollicitudin euismod sem, in eleifend diam interdum nec. Donec id ex aliquam, bibendum tortor nec, condimentum leo. Aenean scelerisque molestie magna in lobortis. Etiam maximus neque vel nibh aliquam pulvinar. Donec eget cursus diam. Donec eu elit mauris. Vestibulum in ex bibendum, accumsan elit et, rhoncus est. Proin vehicula dui eu tristique interdum. Morbi hendrerit mi tellus. Quisque ultricies consequat nulla ut cursus. Mauris ultricies sagittis consequat. Duis sagittis finibus nisl, non aliquam eros pulvinar nec. Suspendisse ut dolor sed odio dapibus maximus vitae vel neque. Donec sed vestibulum lacus. Aliquam sed convallis nisi.
+    </p>
+    <p>
+      Donec eget turpis vitae neque iaculis dignissim. Cras sit amet ipsum condimentum, maximus ipsum at, aliquam purus. Sed justo est, ultrices quis nisi ac, mollis ultrices felis. Donec rutrum orci rutrum eros euismod, quis rutrum mi vehicula. Morbi eleifend massa non tellus suscipit ornare. Ut vel cursus mauris, ac elementum nisl. Nulla nisi mauris, porttitor ut justo ut, finibus dignissim justo. Sed dignissim neque augue, et congue ipsum sagittis pellentesque. Proin auctor nisl orci, non iaculis nisl suscipit vel. Integer ultrices semper elit, non cursus tortor vulputate vel. Suspendisse gravida nunc non molestie accumsan. Curabitur ut erat eros. Duis rutrum neque aliquet, vulputate mauris id, malesuada massa. Fusce pellentesque porttitor metus, eu imperdiet orci condimentum lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+  </div>
   <br>
   <h4 class="typewriter">Where can I get some?</h4>
-  <p class="indent-in">
-    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-  </p>
+  <div class="indent-in">
+    <p>
+      Nunc cursus eleifend erat, ut fringilla est. Donec suscipit velit quis magna efficitur ultricies. Cras lobortis porttitor ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque orci id semper tincidunt. Nullam egestas libero efficitur lacus tincidunt ornare. Duis vitae nisi mi. Vestibulum in enim bibendum, aliquet lorem vitae, mollis eros. Phasellus tristique malesuada enim, quis bibendum diam semper eu. Pellentesque aliquam at est eu mattis. Integer arcu arcu, pulvinar sit amet mattis et, porta sit amet quam. Aenean vitae pulvinar lacus. Phasellus eu nibh diam.
+    </p>
+    <p>
+      Nam purus ipsum, auctor eget leo eget, lacinia iaculis erat. Quisque non vestibulum libero. Proin tristique consequat dolor quis sodales. Praesent sagittis dui eros. Aliquam sagittis rutrum est, ac hendrerit sem varius eget. Suspendisse rhoncus in felis mollis vehicula. Proin vitae ex et nulla suscipit pellentesque. Ut fermentum velit eget imperdiet laoreet. Donec quis lorem laoreet orci feugiat porta. Donec pellentesque tincidunt fermentum. Phasellus placerat lectus ac lobortis aliquam. In molestie justo et massa molestie posuere.
+    </p>
+  </div>
+  <br>
 </div>

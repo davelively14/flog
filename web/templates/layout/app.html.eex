@@ -18,12 +18,12 @@
       <nav role="navigation">
         <ol class="breadcrumb pull-right typewriter">
           <!-- <li><button href="#" class="btn-lg menu-drop"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button></li> -->
-          <li>Flog</li>
-          <li><%= link "Bio", to: bio_path(@conn, :index) %></li>
-          <li><%= link "Portfolio", to: portfolio_path(@conn, :index) %></li>
+          <li><span class="glyphicon glyphicon-home"></span> <%= link "Home", to: page_path(@conn, :index) %></li>
+          <li><span class="glyphicon glyphicon-fire"></span> Flog</li>
+          <li><span class="glyphicon glyphicon-list-alt"></span> <%= link "Bio", to: bio_path(@conn, :index) %></li>
+          <li><span class="glyphicon glyphicon-book"></span> <%= link "Portfolio", to: portfolio_path(@conn, :index) %></li>
           <%= if @current_user do %>
-            <li><%= link "All Users", to: user_path(@conn, :index) %></li>
-            <li><%= link "Logout", to: session_path(@conn, :delete, @current_user), method: :delete %></li>
+            <li><span class="glyphicon glyphicon-log-out"></span> <%= link "Logout", to: session_path(@conn, :delete, @current_user), method: :delete %></li>
             <li class="dropdown">
               <button type="button" id="user-dd" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="border: 0; background: transparent;">
                 <span class="glyphicon glyphicon-user"></span> <%= @current_user.username %> <span class="caret"></span>
@@ -34,7 +34,7 @@
               </ul>
             </li>
           <%= else %>
-            <li><%= link "Login", to: session_path(@conn, :new) %></li>
+            <li><span class="glyphicon glyphicon-log-in"></span> <%= link "Login", to: session_path(@conn, :new) %></li>
           <% end %>
         </ol>
       </nav>

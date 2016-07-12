@@ -1,20 +1,6 @@
 # Flog
 
-To start your Phoenix app:
+This is my personal website. It will contain my portfolio, bio, and a programmer's blog, which I will lovingly refer to as a "flog". The concept is simple: click on the flame icon near a section of code or a paragraph in my blog and comment away on how bad it is.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `npm install`
-  * Start Phoenix endpoint with `mix phoenix.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+## v0.1
+- Get stuff up and running.
